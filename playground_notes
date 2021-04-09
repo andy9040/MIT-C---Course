@@ -1,0 +1,79 @@
+#include <iostream>
+
+//namespaces will be a future lesson but it helps define the context for some functions
+using namespace std;
+
+int main() {
+    
+    //cout<< = System.out.print();
+    //cin --> how you
+    cout<<"Enter a number\n";
+    
+    //variable declaration is the same.
+    int x;
+    
+    //cin>>x is NOT the same as x<<cin!
+    cin>>x;
+    
+    //testing if statements (exactly the same as Java)
+    cout<<"If-else statement\n\n";
+    if(x>=0){
+        cout<<"Your number is greater than or equal to 0.\n";
+    } else {
+        cout<<"Your number is less than 0.\n";
+    }
+    
+    // switch-case conditional strucutre --> glorified if statement
+    cout<<"\n\nSwitch-Case \n";
+    switch(x%4){
+        case 0:
+            cout<<"Your number is a multiple of 4.\n";
+            
+        case 2:
+            cout<<"Your number is a multiple of 2.\n";
+            break;
+        default:
+            cout<<"Your number is not a multiple of 2 or 4. "<<x<<endl;
+    }
+    
+    //while loop (same as Java)
+    cout<<"\n\nWhile Loop \n";
+    while(x%5!=0){
+        cout<<x<<" is not divisible by 5\n";
+        x=x+1;
+    }
+    
+    //Do-While loops --> cool addition --> ensures program is at least run once
+    cout<<"\n\ndo-while loops \n";
+    
+    do
+    {
+        cout<<x<<"\n";
+        x=x+1;
+    }while(x<15);
+    
+    
+    //For-Loop --> essentially same as java, but no need to define counter if already defined
+    cout<<"\n\n";
+    cout<<"For-loop. The evens from 1-10 are\n";
+    int y=1;
+    for(; y<=10; y=y+1){
+        if(y%2==0){
+        cout<<"y is "<<y<<" \n";
+        }
+    }
+    
+    
+    //String are char* type
+    cout<<"\n";
+    char printThis[] = "Hello World";
+    cout<<endl<<printThis<<endl;
+    
+    //pointer stuff
+    int z = 145;
+    int *ptr=&z;
+    
+    cout<<endl<<"Pointer: "<<*ptr<<endl;
+    //must end with a return
+    return 0;
+}
