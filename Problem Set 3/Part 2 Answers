@@ -1,0 +1,7 @@
+// Part 2
+//1. Line 20 needs; and must remove const¬
+//2. There should be no const on line 11¬
+//3. Need to use getter methods¬
+//4. Line 13 should be within class section¬
+//5. change to delet[]¬
+//6. Need to add delete¬
